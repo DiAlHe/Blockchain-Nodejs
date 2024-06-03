@@ -16,7 +16,7 @@ class Block{
 
             this.hash = SHA256(JSON.stringify({...this,hash:null})).toString()
 
-            if (currentHashv !== this.hash){
+            if (currentHash !== this.hash){
                 return resolve(false);
             }
 
